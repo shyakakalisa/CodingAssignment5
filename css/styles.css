@@ -1,0 +1,123 @@
+/* Global Styles */
+* {
+    box-sizing: border-box; /* Required for box model assignment */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fdf6e3;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+/* Rows */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+/* Header */
+.header {
+    background-color: #ff6f61;
+    color: white;
+    justify-content: center;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Main Content Row */
+.main-content {
+    gap: 20px;
+}
+
+/* Columns */
+.col {
+    padding: 10px;
+}
+
+/* Left Links */
+.left-links {
+    flex: 1;
+    background-color: #fce4ec;
+    min-width: 150px;
+}
+
+.left-links ul {
+    list-style-type: none;
+}
+
+.left-links a {
+    text-decoration: none;
+    color: #d81b60;
+    font-weight: bold;
+}
+
+.left-links a:hover {
+    text-decoration: underline;
+}
+
+/* Image Content */
+.image-content {
+    flex: 2;
+    text-align: center;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.image-content .highlight {
+    color: #ff6f61;
+    font-weight: bold;
+}
+
+/* Rating + Conversion */
+.rating-conversion {
+    flex: 1;
+    background-color: #e0f7fa;
+    min-width: 150px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Recipe Details Row */
+.recipe-details {
+    gap: 20px;
+}
+
+/* Ingredients, Equipment, Directions */
+.ingredients, .equipment, .directions {
+    flex: 1;
+    background-color: #fff8e1;
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 150px;
+}
+
+/* Footer */
+.footer {
+    background-color: #607d8b;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content, .recipe-details {
+        flex-direction: column;
+    }
+}
