@@ -11,113 +11,117 @@
 
 <body>
 
-<header>
-    <h1>A Fresh and Simple Kale Salad</h1>
-    <h2>Kale Salad</h2>
-    <p>Recipe by: Shyaka Kalisa</p>
-</header>
+<div class="container-fluid">
 
-<div class="wrapper">
-
-    <div class="box1">
-        <figure>
-            <img src="images/kale-salad.jpg"
-                 alt="Fresh kale salad in a bowl"
-                 height="250">
-            <figcaption>Photo of a fresh kale salad.</figcaption>
-        </figure>
+    <!-- Row 1: Header -->
+    <div class="row">
+        <div class="col-12 header" id="page-header">
+            <h1>A Fresh and Simple <span class="highlight">Kale Salad</span></h1>
+            <h2>Kale Salad</h2>
+            <p>Recipe by: Shyaka Kalisa</p>
+        </div>
     </div>
 
-    <div class="box2">
-        <h3>Ingredients</h3>
+    <!-- Row 2: Links, Picture, Rating/Conversion -->
+    <div class="row">
 
-        <ul>
-            <li>4 cups chopped kale</li>
-            <li>1 tablespoon olive oil</li>
-            <li>1 tablespoon lemon juice</li>
-            <li>1/2 cup cherry tomatoes</li>
-            <li>1/4 cup sliced cucumber</li>
-            <li>1/4 cup shredded carrots</li>
-            <li>Salt and pepper to taste</li>
-        </ul>
+        <div class="col-20 links">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="#ingredients">Ingredients</a></li>
+                <li><a href="#equipment">Equipment</a></li>
+                <li><a href="#directions">Directions</a></li>
+            </ul>
+        </div>
+
+        <div class="col-50 picture">
+            <h3>Fresh Kale Salad</h3>
+            <figure>
+                <img src="images/kale-salad.jpg"
+                     alt="Fresh kale salad in a bowl">
+                <figcaption>Photo of a fresh kale salad.</figcaption>
+            </figure>
+        </div>
+
+        <div class="col-30 rating">
+            <h3 class="rate">Rate This Recipe</h3>
+
+            <fieldset>
+                <legend>What skill level is the recipe?</legend>
+
+                <input type="radio" id="easy" name="skill" value="easy">
+                <label for="easy">Easy</label><br>
+
+                <input type="radio" id="intermediate" name="skill" value="intermediate">
+                <label for="intermediate">Intermediate</label><br>
+
+                <input type="radio" id="hard" name="skill" value="hard">
+                <label for="hard">Hard</label>
+            </fieldset>
+
+            <h3>Conversion</h3>
+
+            <label for="tblspn">Tablespoons:</label>
+            <input type="number" id="tblspn" name="tblspn">
+
+            <p>=</p>
+
+            <label for="cups">Cups:</label>
+            <input type="number" id="cups" name="cups">
+        </div>
+
+    </div>
+
+    <!-- Row 3: Ingredients, Equipment, Directions -->
+    <div class="row">
+
+        <div class="col-30 ingredients" id="ingredients">
+            <h3>Ingredients</h3>
+            <ul>
+                <li>4 cups chopped kale</li>
+                <li>1 tablespoon olive oil</li>
+                <li>1 tablespoon lemon juice</li>
+                <li>1/2 cup cherry tomatoes</li>
+                <li>1/4 cup sliced cucumber</li>
+                <li>1/4 cup shredded carrots</li>
+                <li>Salt and pepper to taste</li>
+            </ul>
+        </div>
+
+        <div class="col-30 equipment" id="equipment">
+            <h3>Equipment</h3>
+            <ul>
+                <li>Large mixing bowl</li>
+                <li>Cutting board</li>
+                <li>Knife</li>
+                <li>Measuring spoons</li>
+            </ul>
+        </div>
+
+        <div class="col-40 directions" id="directions">
+            <h3>Directions</h3>
+            <ol>
+                <li>Wash and dry the kale.</li>
+                <li>Remove the tough stems and chop the kale into small pieces.</li>
+                <li>Place the kale in a large mixing bowl.</li>
+                <li>Add the olive oil and lemon juice.</li>
+                <li>Gently massage the kale with clean hands until it begins to soften.</li>
+                <li>Add the tomatoes, cucumber, and carrots.</li>
+                <li>Season with salt and pepper and mix well.</li>
+                <li>Serve and enjoy.</li>
+            </ol>
+        </div>
+
+    </div>
+
+    <!-- Row 4: Footer -->
+    <div class="row">
+        <div class="col-12 footer" id="page-footer">
+            <p>This page was created as an academic activity only.</p>
+        </div>
     </div>
 
 </div>
-
-<div class="wrapper">
-
-    <div class="box3">
-
-        <h3 class="rate">Rate This Recipe</h3>
-
-        <fieldset>
-            <legend>What skill level is the recipe?</legend>
-
-            <input type="radio"
-                   id="easy"
-                   name="skill"
-                   value="easy">
-            <label for="easy">Easy</label>
-
-            <input type="radio"
-                   id="intermediate"
-                   name="skill"
-                   value="intermediate">
-            <label for="intermediate">Intermediate</label>
-
-            <input type="radio"
-                   id="hard"
-                   name="skill"
-                   value="hard">
-            <label for="hard">Hard</label>
-        </fieldset>
-
-        <h3>Conversion</h3>
-
-        <input type="number"
-               id="tblspn"
-               name="tblspn">
-        =
-        <input type="number"
-               id="cups"
-               name="cups">
-
-        <!--
-        <h3>Equipment</h3>
-        <ul>
-            <li>Large mixing bowl</li>
-            <li>Cutting board</li>
-            <li>Knife</li>
-            <li>Measuring spoons</li>
-        </ul>
-        -->
-
-    </div>
-
-    <div class="box4">
-
-        <h3>Directions</h3>
-
-        <ol>
-            <li>Wash and dry the kale.</li>
-            <li>Remove the tough stems and chop the kale into small pieces.</li>
-            <li>Place the kale in a large mixing bowl.</li>
-            <li>Add the olive oil and lemon juice.</li>
-            <li>Gently massage the kale with clean hands until it begins to soften.</li>
-            <li>Add the tomatoes, cucumber, and carrots.</li>
-            <li>Season with salt and pepper and mix well.</li>
-            <li>Serve and enjoy.</li>
-        </ol>
-
-    </div>
-
-</div>
-
-<footer>
-    <hr>
-    <p>This page created as academic activity only.</p>
-</footer>
 
 </body>
-
 </html>
