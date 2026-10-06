@@ -1,0 +1,195 @@
+/* Coding Assignment 5
+   Shyaka Kalisa
+   Bellevue College
+*/
+
+/* Box Model */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f1e8;
+    color: #24352a;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+.container-fluid {
+    width: 100%;
+    padding: 15px;
+}
+
+/* Required row clearing */
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* Required floating columns */
+[class*="col-"] {
+    float: left;
+    padding: 20px;
+}
+
+/* Column widths */
+.col-12 {
+    width: 100%;
+}
+
+.col-20 {
+    width: 20%;
+}
+
+.col-30 {
+    width: 30%;
+}
+
+.col-40 {
+    width: 40%;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+/* Header */
+.header {
+    background-color: #294936;
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.header h1 {
+    margin-bottom: 5px;
+}
+
+.header h2 {
+    margin-top: 5px;
+}
+
+.highlight {
+    color: #d9e8b5;
+    font-style: italic;
+}
+
+/* Links */
+.links {
+    background-color: #e2ead7;
+    min-height: 420px;
+}
+
+.links ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.links a {
+    color: #365d45;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Picture */
+.picture {
+    background-color: #ffffff;
+    text-align: center;
+    min-height: 420px;
+}
+
+.picture img {
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+}
+
+.picture figure {
+    margin: 10px;
+}
+
+.picture figcaption {
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* Rating and Conversion */
+.rating {
+    background-color: #e8dfca;
+    min-height: 420px;
+}
+
+.rating fieldset {
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.rating input[type="number"] {
+    width: 100%;
+    padding: 7px;
+    margin-top: 5px;
+}
+
+.rate {
+    color: #6b4f2c;
+}
+
+/* Bottom row */
+.ingredients {
+    background-color: #dce8cf;
+    min-height: 390px;
+    margin-top: 15px;
+}
+
+.equipment {
+    background-color: #eee5d2;
+    min-height: 390px;
+    margin-top: 15px;
+}
+
+.directions {
+    background-color: #d8e4df;
+    min-height: 390px;
+    margin-top: 15px;
+}
+
+.ingredients h3,
+.equipment h3,
+.directions h3,
+.links h3,
+.picture h3,
+.rating h3 {
+    color: #365d45;
+}
+
+/* Lists */
+.ingredients li,
+.equipment li,
+.directions li {
+    margin-bottom: 8px;
+}
+
+/* Footer */
+.footer {
+    background-color: #294936;
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+/*
+Development border:
+Turn this on while developing if needed.
+Do NOT publish with the border visible.
+
+div {
+    border: double cornflowerblue;
+}
+*/
